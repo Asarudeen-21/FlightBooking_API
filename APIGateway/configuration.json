@@ -1,0 +1,385 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/customers",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9001,
+      "UpstreamPathTemplate": "/customers",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/customers/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHost": "localhost",
+      "DownstreamPort": 9001,
+      "UpstreamPathTemplate": "/customers/{id}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/products",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9002,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/api/products",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/admin",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/admin",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/Airlines",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/GetAirlines",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/AddingAirlines",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/addingairlines",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/DeleteAirlines",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Delete",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/DeleteAdmin",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/DeleteAdmin",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/DeleteInventory",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/DeleteInventory",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/DeleteDiscount",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/DeleteDiscount",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/GetInventories",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Inventories",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/AddInventory",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/AddInventory",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/Block",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/BlockAirlines",
+      "UpstreamHttpMethod": [ "Put" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/Search",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/SearchFlights",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/SearchByID",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/SearchFlightsByID",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/GetAdmin",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/GetAdmin",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/GetLoginInfo",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/LoginInfo",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/RegisterAdmin",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/AdminRegistration",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/Login",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Login",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Token/Authenticate",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Authenticate",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/values/AddDiscounts",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9003,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/AddDiscount",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/Search",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Search",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/Booking",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Booking",
+      "UpstreamHttpMethod": [ "Post" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/TicketDetails",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/TicketDetails",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/History",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/History",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/BookingHistory",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/TicketHistory",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/GetDiscounts",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/GetDiscounts",
+      "UpstreamHttpMethod": [ "Get" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/Cancel",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/Cancel",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/user/CancelBooking",
+      "DownstreamScheme": "http",
+      "DownstreamPort": 9004,
+      "DownstreamHost": "localhost",
+      "UpstreamPathTemplate": "/CancelTicket",
+      "UpstreamHttpMethod": [ "Delete" ],
+      "QoSOptions": {
+        "ExceptionsAllowedBeforeBreaking": 3,
+        "DurationOfBreak": 10,
+        "TimeoutValue": 5000
+      }
+    }
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
